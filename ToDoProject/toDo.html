@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="toDo.css" />
+    <title>Grocery Item</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="innerContext">
+        <div class="row">
+          <div class="col mx-auto col-md-8 mt-3 text-center">
+            <div class="alert text-capitalize feedback">
+              Write value for item
+            </div>
+            <!-- form -->
+            <form id="itemForm" class="my-3">
+              <h1 class="text-capitalize mb-4">TO DO LIST</h1>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control text-capitalize"
+                  id="itemInput"
+                  placeholder="Enter the item to store...."
+                />
+                <div class="input-group-append buttons">
+                  <button
+                    class="btn btn-green text-capitalize"
+                    id="add-list"
+                    type="submit"
+                  >
+                    Add-item
+                  </button>
+                </div>
+              </div>
+            </form>
+            <div class="item-container">
+              <div class="item-list my-5">
+                <div class="item my-3">
+                  <h5 class="item-name text-capitalize">laundry</h5>
+                  <div class="item-icons">
+                    <a href="#" class="complete-item mx-2 item-icon"
+                      ><i class="far fa-check-circle"></i
+                    ></a>
+                    <a href="#" class="edit-item mx-2 item-icon"
+                      ><i class="far fa-edit"></i
+                    ></a>
+                    <a href="#" class="delete-item item-icon"
+                      ><i class="far fa-times-circle"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group-append buttons">
+                <button
+                  type="button"
+                  class="btn btn-green my-3 text-capitalize"
+                  id="clear-list"
+                >
+                  Clear-items
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="toDo.js"></script>
+  </body>
+</html>
